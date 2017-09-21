@@ -13,13 +13,14 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     CloudBlobClient client = account.CreateCloudBlobClient();
     CloudBlobContainer container = client.GetContainerReference("files");
     container.CreateIfNotExists();
+    container.SetPermissions(new BlobContainerPermissions { PublicAccess = BlobContainerPublicAccessType.Blob });
     string filename = Path.GetRandomFileName();
-    CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{filename}.json");
+    CloudBlockBlob blockBlob = container.GetBlockBlobReference(filename);
+    blockBlob.Properties.ContentType = "application/json";
     using (var stream = await req.Content.ReadAsStreamAsync())
     {
         blockBlob.UploadFromStream(stream);
     }
     string url = blockBlob.Uri.AbsoluteUri;
-
     return req.CreateResponse(HttpStatusCode.Created, url);
 }
