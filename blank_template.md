@@ -78,6 +78,8 @@ In this exercise, we will deploy a blank Logic App using a simple ARM template. 
 1. In the **Resource groups** blade, right-click the **ARMExercise01** resource group and select the **Delete resource group** option.
 1. In the confirmation blade, enter the name of your resource group (**ARMExercise01**) and then click the **Delete** button.
 
+---
+
 ### Bonus Exercise: Deploy a Simple Logic App
 
 Try deploying another Logic App using an ARM Template. The ARM Template below will deploy a Logic App with a single trigger and action. The Logic App will issue an HTTP Request to the <http://httpbin.org> API once every 15 minutes to obtain a generated UUID value. You should ensure that you delete this Logic App after you are done.
