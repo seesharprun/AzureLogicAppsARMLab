@@ -4,6 +4,7 @@ In this exercise, we will
 
 ###
 
+1. Navigate to the Azure Portal using your preferred browser and this URL: <http://portal.azure.com>.
 1.
 
 ###
