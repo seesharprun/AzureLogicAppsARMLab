@@ -1,4 +1,4 @@
-r "Microsoft.WindowsAzure.Storage"
+#r "Microsoft.WindowsAzure.Storage"
 
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Storage;
