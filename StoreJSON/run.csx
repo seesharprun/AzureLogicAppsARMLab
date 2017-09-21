@@ -17,6 +17,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     string filename = Path.GetRandomFileName();
     CloudBlockBlob blockBlob = container.GetBlockBlobReference(filename);
     blockBlob.Properties.ContentType = "application/json";
+    blockBlob.SetProperties();
     using (var stream = await req.Content.ReadAsStreamAsync())
     {
         blockBlob.UploadFromStream(stream);
