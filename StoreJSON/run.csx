@@ -1,4 +1,4 @@
-#r "Microsoft.WindowsAzure.Storage"
+r "Microsoft.WindowsAzure.Storage"
 
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Storage;
@@ -12,7 +12,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     CloudStorageAccount account = CloudStorageAccount.Parse(storageConnectionString);
     CloudBlobClient client = account.CreateCloudBlobClient();
     CloudBlobContainer container = client.GetContainerReference("files");
-    
+    container.CreateIfNotExists();
     string filename = Path.GetRandomFileName();
     CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{filename}.json");
     using (var stream = await req.Content.ReadAsStreamAsync())
