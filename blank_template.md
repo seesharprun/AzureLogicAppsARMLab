@@ -12,7 +12,7 @@ In this exercise, we will deploy a blank Logic App using a simple ARM template. 
     - **Name**: BlankLogicApp
     - **Subscription**: Select your current subscription
     - **Resource group**: ARMExercise01
-    - **Location**: Select an international datacenter
+    - **Location**: Select an international region
     - **Log Analytics**: Off
 1. Click the **Create** button.
 1. While the Logic App is being created, you will see a notification indicating that the deployment has started. Once the deployment has completed, you will see another notification indicating that the deployment is complete with a link to the deployment template.
@@ -65,7 +65,7 @@ In this exercise, we will deploy a blank Logic App using a simple ARM template. 
 1. In the **Custom deployment** form, provide the following values:
     - **Subscription**: Select your current subscription
     - **Resource group**: ARMExercise01
-    - *I agree to the terms and conditions stated above*: Checkmark to indicate yes 
+    - **I agree to the terms and conditions stated above**: Checkmark to indicate yes 
 1. Click the **Purchase** button to deploy the ARM template.
 1. Once the deployment is complete, click the **Go to resource group** button to view the deployed resource.
     ![ARM Deployment Complete](media/E1-06.png)

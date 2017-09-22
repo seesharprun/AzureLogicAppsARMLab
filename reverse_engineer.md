@@ -1,6 +1,6 @@
 ## Exercise: Reverse Engineering an ARM Template From an Existing Logic App
 
-In this exercise, we will
+In this exercise, we will create a Logic App and then reverse engineer an ARM template from the Logic App.
 
 ### Install the Azure CLI 2.0
 
@@ -19,7 +19,7 @@ In this exercise, we will
     - **Name**: EchoLogicApp
     - **Subscription**: Select your current subscription
     - **Resource group**: ARMExercise02
-    - **Location**: Select your furthest domestic datacenter
+    - **Location**: Select your furthest domestic region
     - **Log Analytics**: Off
 1. Click the **Create** button.
 1. While the Logic App is being created, you will see a notification indicating that the deployment has started. Once the deployment has completed, you will see another notification indicating that the deployment is complete.
