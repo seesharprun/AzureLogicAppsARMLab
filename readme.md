@@ -1,3 +1,7 @@
+## Demo
+
+<iframe src="https://channel9.msdn.com/Blogs/Microsoft-Integration/ARM-templates-for-Azure-Logic-Apps/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
 ## Overview
 
 In this lab, you will discover how to deploy Azure Logic Apps in an automated fashion using ARM templates. There are three "exercises" in this lab and the documentation is provided here on GitHub so that you can complete this lab at your own pace.
