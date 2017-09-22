@@ -24,7 +24,7 @@ In this exercise, we will deploy a blank Logic App using a simple ARM template. 
     > This is the template used by the Azure Portal to create new Logic App instances
 1. Click the **Add to Library** button at the top of the **Template** blade.
     ![ARM Template Viewer](media/E1-03.png)
-1. In the **Add template** blade, provide any value in the **Name** and **Description** fields. Click the **Save** button to save the template.
+1. In the **Template** blade, provide any value in the **Name** and **Description** fields. Click the **Save** button to save the template.
 
 ### Deploy a Blank Logic App Using an ARM Template
 
