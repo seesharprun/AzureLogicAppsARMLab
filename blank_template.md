@@ -28,7 +28,7 @@ In this exercise, we will deploy a blank Logic App using a simple ARM template. 
 
 ### Deploy a Blank Logic App Using an ARM Template
 
-1. In a new browser window/tab, navigate to the portal again using this URL: <https://portal.azure.com/#create/Microsoft.Template>.
+1. In a new browser window/tab, navigate to the portal again using this URL: <https://portal.azure.com/#create/Microsoft.Template>
 1. In the **Custom deployment** blade, click the **Build your own template in the editor** link.
     ![Custom Deployment Blade](media/E1-04.png)
 1. In the template editor, paste in the following JSON template:
